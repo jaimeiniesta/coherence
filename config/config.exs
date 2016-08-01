@@ -4,7 +4,8 @@ use Mix.Config
 
 config :coherence, Coherence.Mailer,
   adapter: Swoosh.Adapters.Sendgrid,
-  api_key: ""
+  api_key: "",
+  domain: "",
+  base_url: ""
 
 import_config "#{Mix.env}.exs"
-
